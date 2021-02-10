@@ -1,5 +1,6 @@
 
-##AURIS
+## AURIS
+
 Package for identifying common mutations and analyzing short genomes for the existence of specific
 substrings.
 
