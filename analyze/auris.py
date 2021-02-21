@@ -2,20 +2,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
 import re
-import argparse
 import os.path
-
-parser = argparse.ArgumentParser(description='Specify the parameters to run analyses.')
-parser.add_argument('input_csv', type=str, help="Path to input CSV")
-parser.add_argument('out_vis', type=str, help="Path to output pdf")
-parser.add_argument('out_csv', type=str, help="Path to output CSV")
-parser.add_argument('searched_domain', type=str, help="String to be searched")
-parser.add_argument('reference_id', type=str, help="ID of the reference genome")
-parser.add_argument('-count_threshold', '--ct', type=int, required=False, default=1,
-                    help="Threshold for plotting variations")
-parser.add_argument('-a', '--a', type=bool, default=False, help="plot all the variants above the threshold ,"
-                                                                "default = the first 100 of the most frequent variants")
-args = parser.parse_args()
 
 
 def check_alphabet(sequence):
